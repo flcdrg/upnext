@@ -20,9 +20,9 @@ Room 2:
     Jakob Pennington
     Shifting Left: DevSecOps as an Approach to Building Secure Products"
 
-"10:35" = "Morning tea
-    
-    Level 8 foyer"
+"10:35" = "Level 8 foyer:
+
+    Morning tea"
 
 "11:00" = "Room 1:
     Rob Crowley
@@ -40,9 +40,9 @@ Room 2:
     Scott Cabot
     Making gaming accessible: Leveraging cloud services to build games everyone can play"
 
-"12:35" = "Lunch
+"12:35" = "Level 8 foyer:
 
-Level 8 foyer"
+    Lunch"
 
 "13:20" = "Room 1:
     Ming Johanson
@@ -68,9 +68,9 @@ Room 2:
     Jess Budd
     Making React Apps Accessible: It's easier than you think"
 
-"15:45" ="Afternoon tea
+"15:45" ="Level 8 foyer:
 
-    Level 8 foyer"
+    Afternoon tea"
 
 "16:10" = "Room 1:
     Liam McLennan
@@ -88,6 +88,9 @@ Room 2:
     Prize Draw, Thank Yous, and Wrap Up"
 
 "18:15" = "After Conference Social"
+
+"23:58" = "Time to go to sleep!"
+"23:59" = "Zzzzzzzzzzzzzzzzzzzz"
 }
 
 
