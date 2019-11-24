@@ -5,9 +5,14 @@ param (
 $ErrorActionPreference = "Stop"
 
 $data = [ordered] @{
+"6:00" = "Early"
+
 "8:00" = "    Registration"
+
 "8:45" = "Room 1:
-    Welcome"
+
+    Welcome (starting 8.45am)"
+
 "9:00" = "Room 1:
     Keynote - Lars Klint
     Rise of the Machines – Technology in Humanity"
@@ -114,9 +119,9 @@ do {
 
     $decimalNow = $now.TimeOfDay
 
-    $onNow = ($data.Keys | Where-Object { [TimeSpan] $_ -ge $decimalNow } | Select-Object -First 1)
+    $onNow = ($data.Keys | Where-Object { ([TimeSpan] $_) -le $decimalNow } | Select-Object -Last 1)
 
-    $onNext = ($data.Keys | Where-Object { [TimeSpan] $_ -ge $decimalNow } | Select-Object -Skip 1 -First 1)
+    $onNext = ($data.Keys | Where-Object { ([TimeSpan] $_) -gt $decimalNow } | Select-Object -first 1)
 
     [Console]::ForegroundColor = [System.ConsoleColor]::Red
     [Console]::Write("D")
